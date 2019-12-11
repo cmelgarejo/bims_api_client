@@ -36,12 +36,12 @@ include BimsApiClient
 And initialize the configuration
 
 ```
-  BimsApiClient.configure do |cfg|
-    cfg.redis_url = ENV['BAC_REDIS_URL'] #Your Redis instance URL
-    cfg.username = ENV['BAC_USERNAME'] #Your BIMS username
-    cfg.password = ENV['BAC_PASSWORD']#Your BIMS password
-    cfg.instance_name = ENV['BAC_INSTANCE_NAME'] #Your BIMS Instance name
-    cfg.instance_url = ENV['BAC_INSTANCE_URL'] #Your BIMS Instance URL (Include the /api)
+  BimsApiClient.configure do |config|
+    config.redis_url = ENV['BAC_REDIS_URL'] #Your Redis instance URL
+    config.username = ENV['BAC_USERNAME'] #Your BIMS username
+    config.password = ENV['BAC_PASSWORD']#Your BIMS password
+    config.instance_name = ENV['BAC_INSTANCE_NAME'] #Your BIMS Instance name
+    config.instance_url = ENV['BAC_INSTANCE_URL'] #Your BIMS Instance URL (Include the /api)
   end
   #And initialize the client
   BimsApiClient.init
